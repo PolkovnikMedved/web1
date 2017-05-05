@@ -1,0 +1,18 @@
+.centered{
+    text-align: center;
+}
+b{
+    font-size: 1.3em;
+}
+.full-width{
+    width:100%;
+}
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+#navigation-menu{
+    text-decoration: none;
+}
