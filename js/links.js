@@ -6,8 +6,13 @@ var links = {
 
 function goToLink(url)
 {
-  document.location.href = url;
+  window.location.href = url;
 };
 
 var data = document.getElementById('data');
-//data.addEventListener('click', (goToLink(links['data'])), false);
+var welome = document.getElementById('welcome');
+var contact = document.getElementById('contact');
+
+data.addEventListener('click', function(e){e.preventDefault();goToLink(links['data'])});
+welcome.addEventListener('click', function(e){e.preventDefault();goToLink(links['welcome'])});
+contact.addEventListener('click', function(e){e.preventDefault();goToLink(links['contact'])});
