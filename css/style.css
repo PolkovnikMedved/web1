@@ -1,18 +1,36 @@
-.centered{
-    text-align: center;
+/* Menu list horizontal */
+ul#navigation-menu{
+  list-style-type: none;
 }
-b{
-    font-size: 1.3em;
+ul#navigation-menu > li{
+  display:inline;
+  margin-left:1%;
+  margin-right:1%;
+
+  /* Same parameters as p tag */
+  font-size: 1.125rem;
+  font-weight: 200;
+  line-height: 1.8;
 }
-.full-width{
-    width:100%;
+ul#navigation-menu > li > a{
+  /* Contours */
+  border: 1px solid lightgray;
+  padding: 0.5rem;
+  border-radius: 5px;
+
+  color: gray;
+  text-decoration: none;
 }
-.left{
-    float:left;
+ul#navigation-menu > li > a:hover{
+  border: 1px solid limegreen;
 }
-.right{
-    float:right;
+
+/* GENERAL CSS FOR LINKS */
+
+a{
+  color: gray;
+  text-decoration:none;
 }
-#navigation-menu{
-    text-decoration: none;
+a:hover{
+  color:limegreen;
 }
