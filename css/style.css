@@ -1,3 +1,11 @@
+header{
+  border-bottom:1px solid lightgray;
+}
+
+footer{
+  background-color: slategray;
+}
+
 /* Menu list horizontal */
 ul#navigation-menu{
   list-style-type: none;
@@ -33,4 +41,9 @@ a{
 }
 a:hover{
   color:limegreen;
+}
+
+/* Some helpers */
+.full-width{
+  width:100%;
 }
