@@ -2,15 +2,15 @@ var links = {
   data: 'data.html',
   contact: 'contact.html',
   welcome: 'index.html'
-}
+};
 
 function goToLink(url)
 {
   window.location.href = url;
-};
+}
 
 var data = document.getElementById('data');
-var welome = document.getElementById('welcome');
+var welcome = document.getElementById('welcome');
 var contact = document.getElementById('contact');
 
 data.addEventListener('click', function(e){e.preventDefault();goToLink(links['data'])});

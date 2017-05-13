@@ -4,14 +4,19 @@ header{
 
 footer{
   background-color: slategray;
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
 }
 
 /* Menu list horizontal */
 ul#navigation-menu{
   list-style-type: none;
 }
-ul#navigation-menu > li{
-  display:inline;
+ul#navigation-menu li{
+  position:relative;
+  display:inline-block;
   margin-left:1%;
   margin-right:1%;
 
@@ -25,7 +30,6 @@ ul#navigation-menu > li > a{
   border: 1px solid lightgray;
   padding: 0.5rem;
   border-radius: 5px;
-
   color: gray;
   text-decoration: none;
 }
@@ -46,4 +50,32 @@ a:hover{
 /* Some helpers */
 .full-width{
   width:100%;
+}
+
+.no-vertical-margin{
+  margin-top:0;
+  margin-bottom:0;
+}
+
+/* Dropdown menu */
+li > ul#sub-menu{
+  display:none;
+  list-style-type: none;
+  padding:0;
+  text-align:center;
+  background-color:white;
+  border-bottom: 1px solid lightgray;
+  border-left: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+  border-radius: 0 0 5px 5px;
+  padding-top:5px;
+}
+
+li:hover ul#sub-menu{
+  display:block;
+  position:absolute;
+}
+
+li:hover li{
+  float:none;
 }
