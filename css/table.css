@@ -1,0 +1,13 @@
+table#opec-table{
+  border-collapse:collapse;
+  width:100%;
+  text-align:center;
+}
+
+table, th, td{
+  border: 1px solid lightgray;
+}
+
+table#opec-table thead{
+  background-color:cornflowerblue;
+}

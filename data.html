@@ -5,6 +5,8 @@
         <link rel="icon" href="pictures/lightbulb1.png"/>
         <link rel="stylesheet" href="css/grid.css"/>
         <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/menu.css"/>
+        <link rel="stylesheet" href = "css/table.css"/>
         <title>Data</title>
     </head>
 
@@ -16,14 +18,13 @@
                     <p><a href="index.html">Web1</a></p>
                 </div>
                 <nav class="col-10 no-vertical-margin">
-                    <ul id="navigation-menu" class="right">
+                    <ul id="main-menu" class="right">
                         <li><a href="#" id="welcome">Main</a></li>
-                        <li>
+                        <li id="dropdown">
                           <a href="#" id="data">Data</a>
                           <ul id="sub-menu">
                             <li><a href="#" id="data-1">Data1</a></li>
                             <li><a href="#" id="data-2">Data2</a></li>
-                            <li><a href="#" id="data-3">Data2</a></li>
                           </ul>
                         </li>
                         <li><a href="#" id="contact">Contact</a></li>
@@ -41,7 +42,7 @@
                         <p id="description"></p>
                     </div>
                     <div class="col-6">
-                        <table>
+                        <table id="opec-table">
                             <thead>
                                 <tr>
                                     <th>Index</th>
@@ -91,28 +92,6 @@
                 // Create a table row for every data row
                 timeMoney.forEach(function(element, index)
                 {
-                    /*
-                    tableRow = document.createElement('tr');
-                    tableRow.id = 'row_' + index;
-                    tableColumnIndex = document.createElement('td');
-                    tableColumnDate = document.createElement('td');
-                    tableColumnPrice = document.createElement('td');
-
-                    tableColumnIndex.innerText = index;
-                    tableColumnIndex.id = 'index_' + index;
-
-                    tableColumnDate.innerText = element[0];
-                    tableColumnDate.id = 'date_' + index;
-
-                    tableColumnPrice.innerText = element[1];
-                    tableColumnPrice.id = index + '_' + element[1];
-
-                    tableRow.insertAdjacentHTML('beforeend', tableColumnIndex);
-                    tableRow.insertAdjacentHTML('beforeend', tableColumnDate);
-                    tableRow.insertAdjacentHTML('beforeend', tableColumnPrice);
-                    tableBody.insertAdjacentHTML('beforeend', tableRow);
-                    console.log(tableRow);
-                    */
                     tableRow = tableBody.insertRow(index);
                     tableColumnIndex = tableRow.insertCell(0);
                     tableColumnDate = tableRow.insertCell(1);

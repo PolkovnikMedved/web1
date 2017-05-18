@@ -1,0 +1,28 @@
+ul#main-menu{
+  dispay:block;
+  padding:0;
+}
+ul#main-menu > li{
+  display:inline-block;
+  list-style: none;
+  padding-left:1.3em;
+  font-size:1.3em;
+}
+
+ul#sub-menu
+{
+  display:none;
+  position:absolute;
+  padding:0;
+  margin:0;
+  margin-top:3px;
+  background-color:white;
+  color:lightgray;
+  text-align:left;
+  width:75px;
+}
+
+ul#sub-menu > li{
+  display:inline-block;
+  font-size:1.3em;
+}
