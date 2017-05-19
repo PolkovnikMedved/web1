@@ -20,6 +20,7 @@ ul#sub-menu
   color:lightgray;
   text-align:left;
   width:75px;
+  z-index:2;
 }
 
 ul#sub-menu > li{

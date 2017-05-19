@@ -34,15 +34,22 @@
           </div>
       </header>
 
+      <section>
+        <div class="container">
+            <div id="alert" class="row">
+            </div>
+        </div>
+      </section>
+
         <section>
           <div class="container">
             <div class="row">
               <div class="col-6">
-                <h3 class="center">Formulaire de contact</h3>
-                <form>
+                <h3 class="center">Contact Form</h3>
+                <form name="send-email">
                   <div class="row left">
                     <div class="col-12">
-                      <label for="sender-mail">Enter your email</label>
+                      <label for="sender-mail">Enter your email<span class="required"> *</span></label>
                     </div>
                   </div>
                   <div class="row">
@@ -52,7 +59,7 @@
                   </div>
                   <div class="row left">
                     <div class="col-12">
-                      <label for="sender-subject">Enter the subject</label>
+                      <label for="sender-subject">Enter the subject<span class="required"> *</span></label>
                     </div>
                   </div>
                   <div class="row">
@@ -62,13 +69,13 @@
                   </div>
                   <div class="row left">
                     <div class="col-12">
-                      <label class="left" for="love-science">Do you love science ?</label>
+                      <label class="left" for="love-science">Do you love science ? <span class="required"> *</span></label>
                       <input type="checkbox" class="right" id="love-science" name="love-science"/>
                     </div>
                   </div>
                   <div class="row left">
                     <div class="col-12">
-                      <label class="left" for="who_are_you">Choose who you are</label>
+                      <label class="left" for="who_are_you">Choose who you are <span class="required"> *</span></label>
                       <select class="right" id="who_are_you" name="who_are_you">
                         <option value="student">Student</option>
                         <option value="teacher">Teacher</option>
@@ -78,7 +85,7 @@
                   </div>
                   <div class="row left">
                     <div class="col-12">
-                      <label for="sender-message">Enter your message</label>
+                      <label for="sender-message">Enter your message<span class="required"> *</span></label>
                     </div>
                   </div>
                   <div class="row">
@@ -96,6 +103,7 @@
               <div class="col-6">
                 <h3 class="center">Find us for real</h3>
                 <br/>
+                <br/>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2519.4903577753225!2d4.340286714720351!3d50.84060327953112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c470f84554f5%3A0x94c79c309d9e1e21!2sRue+de+la+Fontaine+4%2C+1000+Bruxelles!5e0!3m2!1sfr!2sbe!4v1494166066442" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
               </div>
             </div>
@@ -112,5 +120,6 @@
           </div>
         </footer>
         <script src="js/links.js"></script>
+        <script src="js/validateForm.js"></script>
     </body>
 </html>
