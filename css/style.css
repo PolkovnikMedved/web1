@@ -60,3 +60,28 @@ input[type="checkbox"]{
   padding:0;
   width:20px;
 }
+
+#about-opec{
+  margin-top:20px;
+}
+
+#opec-logo{
+  height:150px;
+  width:auto;
+  float:left;
+  margin-right:20px;
+}
+#video-opec > .container{
+  border-top:1px solid lightgray;
+  margin-top:20px;
+  padding-top:20px;
+}
+
+#video-opec{
+  margin-bottom:100px;
+}
+
+#youtube-video{
+  float:right;
+  margin-left:20px;
+}
