@@ -5,6 +5,7 @@
         <link rel="stylesheet" href="css/grid.css"/>
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/menu.css"/>
+        <link rel="stylesheet" href="css/table.css"/>
         <link rel="icon" href="pictures/lightbulb1.png"/>
         <title>Data2</title>
     </head>
@@ -22,8 +23,8 @@
                         <li id="dropdown">
                           <a href="#" id="data">Données</a>
                           <ul id="sub-menu">
-                            <li><a href="#" id="data-1">Data1</a></li>
-                            <li><a href="#" id="data-2">Data2</a></li>
+                            <li><a href="#" id="data-1">Prix</a></li>
+                            <li><a href="#" id="data-2">Pays</a></li>
                           </ul>
                         </li>
                         <li><a href="#" id="contact">Contact</a></li>
@@ -34,14 +35,131 @@
       </header>
 
         <section>
+            <div class="container">
+                <div class="row">
+                  <h3 class="center">Voici les données importantes pour les pays de l'OPEP</h3>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <table id="opec-data">
+                        <thead>
+                          <tr>
+                            <th colspan="2">Continent-Pays</th>
+                            <th>PIB Mrd $</th>
+                            <th>PIB/habitant $</th>
+                            <th>Nombre d'hab. (Millions)</th>
+                          </tr>
+                        </thead>
 
+                        <tbody>
+                          <tr>
+                            <td colspan="2">Afrique - Algérie</td>
+                            <td>168.3</td>
+                            <td>15 000</td>
+                            <td>39.67</td>
+                          </tr>
+
+                          <tr>
+                            <td colspan="2">Afrique - Angola</td>
+                            <td>193.9</td>
+                            <td>6 881</td>
+                            <td>25.79</td>
+                          </tr>
+
+                          <tr>
+                            <td colspan="2">Afrique - Gabon</td>
+                            <td>36.2</td>
+                            <td>19 252</td>
+                            <td>1.48</td>
+                          </tr>
+
+                          <tr>
+                            <td colspan="2">Afrique - Libye</td>
+                            <td>90.9</td>
+                            <td>14 236</td>
+                            <td>6.4</td>
+                          </tr>
+
+                          <tr>
+                            <td colspan="2">Afrique - Nigeria</td>
+                            <td>1.2</td>
+                            <td>6 351</td>
+                            <td>188</td>
+                          </tr>
+
+                          <tr>
+                            <td colspan="2">Amérique du sud - Equateur</td>
+                            <td>194</td>
+                            <td>11 788</td>
+                            <td>16</td>
+                          </tr>
+
+                          <tr>
+                            <td colspan="2">Amérique du sud - Venezuela</td>
+                            <td>404</td>
+                            <td>12 859</td>
+                            <td>31</td>
+                          </tr>
+
+                          <tr>
+                            <td colspan="2">Moyen-Orient - Arabie Saoudite</td>
+                            <td>1803</td>
+                            <td>55 229</td>
+                            <td>33</td>
+                          </tr>
+
+                          <tr>
+                            <td colspan="2">Moyen-Orient - E.A.U.</td>
+                            <td>693</td>
+                            <td>68 424</td>
+                            <td>6</td>
+                          </tr>
+
+                          <tr>
+                            <td colspan="2">Moyen-Orient - Irak</td>
+                            <td>612</td>
+                            <td>16 551</td>
+                            <td>38</td>
+                          </tr>
+
+                          <tr>
+                            <td colspan="2">Moyen-Orient - Koweït</td>
+                            <td>317</td>
+                            <td>73 017</td>
+                            <td>4</td>
+                          </tr>
+
+                          <tr>
+                            <td colspan="2">Moyen-Orient - Qatar</td>
+                            <td>353</td>
+                            <td>145 894</td>
+                            <td>2</td>
+                          </tr>
+
+                          <tr>
+                            <td colspan="2">Asie - Indonésie</td>
+                            <td>3257</td>
+                            <td>12 432</td>
+                            <td>263</td>
+                          </tr>
+                        </tbody>
+
+                        <tfoot>
+                          <tr>
+                            <td colspan="5"><em>Source : </em><a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a></td>
+                          </tr>
+                        </tfoot>
+                    </table>
+                  </div>
+                </div>
+            </div>
         </section>
 
         <footer>
           <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p class="center">Created by <b>Solodoukhin Viktor</b></p>
+                    <p class="center">Created by <strong>Solodoukhin Viktor</strong></p>
                 </div>
             </div>
           </div>

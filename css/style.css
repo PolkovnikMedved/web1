@@ -11,6 +11,10 @@ footer{
   height:100px;
 }
 
+strong{
+  font-size:1.3em;
+}
+
 .resizable{
   margin-bottom:100px;
   height: 800px;
@@ -84,4 +88,8 @@ input[type="checkbox"]{
 #youtube-video{
   float:right;
   margin-left:20px;
+}
+
+em{
+  font-style:italic;
 }
