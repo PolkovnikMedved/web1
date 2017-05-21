@@ -16,7 +16,6 @@ strong{
 }
 
 .resizable{
-  margin-bottom:100px;
   height: 800px;
   overflow-y: scroll;
 }
@@ -65,6 +64,16 @@ input[type="checkbox"]{
   width:20px;
 }
 
+textarea{
+  max-width:100%;
+}
+
+*:focus{
+  outline: none;
+  border: 1px solid black;
+  box-shadow: 0 0 5px;
+}
+
 #about-opec{
   margin-top:20px;
 }
@@ -81,10 +90,6 @@ input[type="checkbox"]{
   padding-top:20px;
 }
 
-#video-opec{
-  margin-bottom:100px;
-}
-
 #youtube-video{
   float:right;
   margin-left:20px;
@@ -92,4 +97,30 @@ input[type="checkbox"]{
 
 em{
   font-style:italic;
+}
+
+.with-bottom-margin{
+  margin-bottom:100px;
+}
+
+/* Responsive crutch */
+/*720px max*/
+@media only screen and (max-width: 45em) {
+  #logo{
+    width:100%;
+    text-align:center;
+  }
+  #nav-menu{
+    width:90%;
+    text-align:center;
+    margin:auto;
+    float:left;
+  }
+  section{
+    width:100%;
+    text-align:center;
+  }
+  #youtube-video{
+    width:100%;
+  }
 }

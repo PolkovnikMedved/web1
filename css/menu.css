@@ -1,5 +1,5 @@
 ul#main-menu{
-  dispay:block;
+  position:relative;
   padding:0;
 }
 ul#main-menu > li{

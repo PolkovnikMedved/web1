@@ -15,26 +15,28 @@
           <div class=container>
             <div class="row">
                 <div class="col-2 no-vertical-margin">
-                    <p><a href="index.html">Web1</a></p>
+                    <p id="logo"><a href="index.html">Web1</a></p>
                 </div>
-                <nav class="col-10 no-vertical-margin">
-                    <ul id="main-menu" class="right">
-                        <li><a href="#" id="welcome">Accueil</a></li>
-                        <li id="dropdown">
-                          <a href="#" id="data">Données</a>
-                          <ul id="sub-menu">
-                            <li><a href="#" id="data-1">Prix</a></li>
-                            <li><a href="#" id="data-2">Pays</a></li>
-                          </ul>
-                        </li>
-                        <li><a href="#" id="contact">Contact</a></li>
-                    </ul>
-                </nav>
+                <div id="nav-menu">
+                  <nav class="col-10 no-vertical-margin">
+                      <ul id="main-menu" class="right">
+                          <li><a href="#" id="welcome">Accueil</a></li>
+                          <li id="dropdown">
+                            <a href="#" id="data">Données</a>
+                            <ul id="sub-menu">
+                              <li><a href="#" id="data-1">Prix</a></li>
+                              <li><a href="#" id="data-2">Pays</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="#" id="contact">Contact</a></li>
+                      </ul>
+                  </nav>
+                </div>
             </div>
           </div>
       </header>
 
-        <section>
+        <section class="with-bottom-margin">
             <div class="container">
                 <div class="row">
                     <div class="col-6">
@@ -73,38 +75,6 @@
         </footer>
         <script src="js/links.js" type="text/javascript"></script>
         <script src="js/ajax.js" type="text/javascript"></script>
-        <script>
-            function parseOpecData(data)
-            {
-                // Our data
-                var tableRow;
-                var tableColumnIndex;
-                var tableColumnDate;
-                var tableColumnPrice;
-                var tableBody = document.getElementById('table-body');
-                var opecData = JSON.parse(data);
-                var dbName = opecData.dataset.name;
-                var dbDescription = opecData.dataset.description;
-                var timeMoney = opecData.dataset.data;
-
-                // Append title + description to our page
-                document.getElementById('name').innerText = dbName;
-                document.getElementById('description').innerText = dbDescription;
-
-                // Create a table row for every data row
-                timeMoney.forEach(function(element, index)
-                {
-                    tableRow = tableBody.insertRow(index);
-                    tableColumnIndex = tableRow.insertCell(0);
-                    tableColumnDate = tableRow.insertCell(1);
-                    tableColumnPrice = tableRow.insertCell(2);
-
-                    tableColumnIndex.innerHTML = index;
-                    tableColumnDate.innerHTML = element[0];
-                    tableColumnPrice.innerHTML = element[1];
-                })
-            }
-            ajaxRequest(externalLinks['opec'], "GET", parseOpecData, true);
-        </script>
+        <script src="js/getOpecDb.js" type="text/javascript"></script>
     </body>
 </html>
