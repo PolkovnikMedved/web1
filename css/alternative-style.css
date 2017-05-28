@@ -238,6 +238,10 @@ footer{
     height:100px;
 }
 
+footer:before{
+    content:"";
+}
+
 strong{
     font-size:1.3em;
 }
@@ -408,7 +412,7 @@ ul#sub-menu > li{
 table{
     z-index:1;
 }
-table#opec-table, table#opec-data{
+table#opec-table{
     border-collapse:collapse;
     width:100%;
     text-align:center;
@@ -420,12 +424,4 @@ table, th, td{
 
 table#opec-table thead{
     background-color:cornflowerblue;
-}
-
-table#opec-data thead{
-    background-color: crimson;
-}
-
-table#opec-data td:first-child{
-    background-color: gainsboro;
 }
