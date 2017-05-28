@@ -1,15 +1,7 @@
-var links = {
-  data: 'data.html',
-  data2: 'data2.html',
-  contact: 'contact.html',
-  welcome: 'index.html'
-};
-
-function goToLink(url)
-{
-  window.location.href = url;
-}
-
+/**
+ * This function displays the navigation menu
+ * when we click on data.
+ */
 function displaySubMenu()
 {
   var currentDisplay = document.getElementById('sub-menu');
@@ -24,15 +16,6 @@ function displaySubMenu()
   }
 }
 
+// Event listener for data button
 var data = document.getElementById('data');
-var data1 = document.getElementById('data-1');
-var data2 = document.getElementById('data-2');
-var welcome = document.getElementById('welcome');
-var contact = document.getElementById('contact');
-
-
 data.addEventListener('click', function(e){e.preventDefault();displaySubMenu();});
-data1.addEventListener('click', function(e){e.preventDefault();goToLink(links['data'])});
-data2.addEventListener('click', function(e){e.preventDefault();goToLink(links['data2'])});
-welcome.addEventListener('click', function(e){e.preventDefault();goToLink(links['welcome'])});
-contact.addEventListener('click', function(e){e.preventDefault();goToLink(links['contact'])});
