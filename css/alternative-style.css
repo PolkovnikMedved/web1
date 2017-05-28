@@ -425,3 +425,16 @@ table, th, td{
 table#opec-table thead{
     background-color:cornflowerblue;
 }
+
+aside#awelcome{
+    z-index: 100;
+    width: 50px;
+    background-color: crimson;
+    position: fixed;
+    right:0;
+}
+
+img#question-picture{
+    width:50px;
+    height:50px;
+}
