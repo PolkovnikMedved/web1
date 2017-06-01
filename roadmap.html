@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="icon" href="pictures/lightbulb1.png"/>
+        <link rel="stylesheet" title="for-boys" href="css/grid.css"/>
+        <link rel="stylesheet" title="for-boys" href="css/style.css"/>
+        <link rel="stylesheet" title="for-boys" href="css/menu.css"/>
+        <link rel="stylesheet" title="for-boys" href="css/buttons.css"/>
+        <link rel="alternative stylesheet" title="girly" href="css/alternative-style.css"/>
+        <title>ROADMAP</title>
+    </head>
+
+    <body>
+      <header>
+          <div class=container>
+            <div class="row">
+                <div class="col-2 no-vertical-margin">
+                    <p id="logo"><a href="index.html">Web1</a></p>
+                </div>
+                <div id="nav-menu">
+                  <nav class="col-10 no-vertical-margin">
+                      <ul id="main-menu" class="right">
+                          <li><a href="index.html" id="welcome">Accueil</a></li>
+                          <li id="dropdown">
+                            <a href="#" id="data">Données</a>
+                            <ul id="sub-menu">
+                              <li><a href="data.html" id="data-1">Prix</a></li>
+                              <li><a href="data2.html" id="data-2">Pays</a></li>
+                            </ul>
+                          </li>
+                          <li><a href="contact.html" id="contact">Contact</a></li>
+                      </ul>
+                  </nav>
+                </div>
+            </div>
+          </div>
+      </header>
+
+      <aside id="awelcome">
+          <a href="mailto:v.solodoukhin@outlook.com"><img alt="question" id="question-picture" title="Ask a question !" src="pictures/black-question-mark-icon-clip-art-10.png"/></a>
+      </aside>
+
+        <section class="with-bottom-margin">
+          <div class="container">
+            <div class="row">
+                <div class=col-12>
+                    <h3 class="center">Vous pouvez trouver ici les liens qui vous permettront de faciliter la correction.</h3>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <article>
+                  <h3>1 page dont le design s'adapte à la taille de l'écran :</h3>
+                  <p>
+                    Toutes les pages sont avec le chier grid.css qui contient des media queries.
+                  </p>
+                </article>
+
+                <article>
+                  <h3>1 page avec un style alternatif : </h3>
+                  <p>
+                    Toutes les pages incluent un fichier css alternatif qui s'appelle alternative-style.css
+                  </p>
+                </article>
+
+                <article>
+                  <h3>1 page contenant sous forme d'insert une autre page : </h3>
+                  <p>
+                     <a href="index.html#video-description">Iframe video</a> / <a href="contact.html#gmaps">Iframe google maps</a>
+                  </p>
+                </article>
+
+                <article>
+                  <h3>1 script JavaScript sous forme d'insert : </h3>
+                  <p>
+                     La page <a href="data.html">Prix</a> apelle le fichier getOpecDb qui fait un appel AJAX. (+ validateForm dans contact.html)
+                  </p>
+                </article>
+
+                <article>
+                  <h3>1 tableau avec fusion de cellules :</h3>
+                  <p>
+                    Voir <a href="data2.html#opec-data">Pays</a> contient un tableau avec fusion de cellules.
+                  </p>
+                </article>
+
+                <article>
+                  <h3>1 formulaire :</h3>
+                  <p>
+                    Voir <a href="contact.html#sender-mail">contact</a>.
+                  </p>
+                </article>
+
+                <article>
+                  <h3>Couleur d'arrière plan d'une zone de saisie texte change :</h3>
+                  <p>
+                    Entrez des données dans les champs du formulaire <a href="contact.html#sender-mail">contact</a>
+                  </p>
+                </article>
+
+                <article>
+                  <h3>Click sur un libellé renvoit dans la zone de saisie correspondante :</h3>
+                  <p>
+                    Cliquez sur un libellé dans le formulaire <a href="contact.html#sender-mail">contact</a>
+                  </p>
+                </article>
+
+                <article>
+                  <h3>Une sequence video : </h3>
+                  <p>
+                    <a href="index.html#video-description">Video</a>
+                  </p>
+                </article>
+
+                <article>
+                  <h3>Une feuille de style interne :</h3>
+                  <p>
+                    La page <a href="data2.html">Pays</a> contient du css dans la balise style à l'intérieur de la balise head
+                  </p>
+                </article>
+
+                <article>
+                  <h3>Block "absolu" dans un bloc positionné :</h3>
+                  <p>
+                    Le menu en haut de toutes les pages contient un menu deroulant qui est affiché lors du click. Il est positionné en "absolu" dans le block qui est positionné en "relative"
+                  </p>
+                </article>
+
+                <article>
+                  <h3>Superposition partielle des blocs les uns au dessus des autres :</h3>
+                  <p>
+                    Sur toutes les pages au click sur le menu (données) un bloc avec un z-index different apparait.
+                  </p>
+                </article>
+
+                <article>
+                  <h3>
+                    Utilisation des balises, pseudo-formats suivants :
+                  </h3>
+                  <p>
+                    <ul>
+                      <li>
+                        <u>:before : </u>&nbsp; voir style.css ligne 17
+                      </li>
+                      <li>
+                        <u>:after : </u>&nbsp; voir grid.css ligne 148
+                      </li>
+                      <li>
+                        <u>:hover : </u>&nbsp; voir style.css ligne 35
+                      </li>
+                      <li>
+                        <u>:focus : </u>&nbsp; voir style.css ligne 48
+                      </li>
+                      <li>
+                        <u>span : </u>&nbsp; voir contact.html ligne 59
+                      </li>
+                      <li>
+                        <u>em : </u>&nbsp; voir data2.html ligne 171
+                      </li>
+                      <li>
+                        <u>strong : </u>&nbsp; voir footer de toutes les pages (ici ligne 203)
+                      </li>
+                      <li>
+                        <u>overflow : </u>&nbsp; voir style.css ligne 27
+                      </li>
+                      <li>
+                        <u>display : </u>&nbsp; voir style.css ligne 56
+                      </li>
+                      <li>
+                        <u>inline-block : </u>&nbsp; voir menu.css ligne 6
+                      </li>
+                      <li>
+                        <u>nav : </u>&nbsp; sur cette page ci ligne 22
+                      </li>
+                      <li>
+                        <u>section : </u>&nbsp; sur cette page ligne 44
+                      </li>
+                      <li>
+                        <u>article : </u>&nbsp; sur cette page ligne 53
+                      </li>
+                      <li>
+                        <u>aside : </u>&nbsp; sur cette page ligne 40
+                      </li>
+                    </ul>
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer>
+          <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <p class="center" style="margin-bottom:0;">Created by <strong>Solodoukhin Viktor</strong></p>
+                    <p class="center" style="margin-bottom:0;margin-top:0;">
+                      CLIQUEZ <a href="roadmap.html" style="color:red;">ICI</a> POUR TROUVER TOUS LES POINTS TRAITÉS
+                    </p>
+                </div>
+            </div>
+          </div>
+        </footer>
+        <script src="js/links.js"></script>
+    </body>
+</html>
